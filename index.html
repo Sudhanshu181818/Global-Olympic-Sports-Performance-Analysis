@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080b12">
+  <meta name="description" content="Olympics Atlas — interactive Olympic data analytics, medal records, athlete participation, sports and historical trends.">
+  <title>Olympics Atlas — Data, Athletes & History</title>
+  <link rel="preconnect" href="https://public.tableau.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="scroll-progress" id="scrollProgress"></div>
+  <header class="site-header">
+    <a class="logo" href="#top" aria-label="Olympics Atlas home">
+      <span class="logo-symbol"><i></i><i></i><i></i><i></i><i></i></span>
+      <span class="logo-type">OLYMPICS<span>ATLAS</span></span>
+    </a>
+    <button class="menu-button" id="menuButton" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="navigation" id="navigation">
+      <a href="#overview">Overview</a>
+      <a href="#insights">Insights</a>
+      <a href="#dashboard">Dashboard</a>
+      <a href="#story">Data story</a>
+      <a class="nav-pill" href="#about">About project <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-noise"></div>
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="status-dot"></span> SKILL BRIDGE PROJECT <span class="eyebrow-slash">/</span> DATA ANALYTICS</div>
+        <h1>Every medal.<br>Every athlete.<br><em>One bigger story.</em></h1>
+        <p class="hero-description">A visual exploration of Olympic history — uncovering the patterns behind medal tables, athlete participation, age, gender, and the sports that shape the Games.</p>
+        <div class="hero-actions">
+          <a class="button button-bright" href="#dashboard">Explore the data <span>↘</span></a>
+          <a class="text-link" href="#overview">Discover the project <span>↓</span></a>
+        </div>
+        <div class="hero-footnote"><span class="hero-line"></span><span>DATA VISUALIZATION · TABLEAU PUBLIC · INTERACTIVE STORYTELLING</span></div>
+      </div>
+      <div class="hero-stage">
+        <div class="stage-label label-one">GLOBAL<br><b>PARTICIPATION</b></div>
+        <div class="stage-label label-two">DATA / <b>001</b></div>
+        <div class="stage-halo halo-a"></div><div class="stage-halo halo-b"></div>
+        <div class="stage-ring ring-a"></div><div class="stage-ring ring-b"></div><div class="stage-ring ring-c"></div>
+        <div class="stage-cross cross-a"></div><div class="stage-cross cross-b"></div>
+        <div class="stage-center"><span>O</span><small>THE GAMES<br>THROUGH DATA</small></div>
+        <div class="float-panel panel-top"><span class="panel-icon">↗</span><div><small>THE BIG PICTURE</small><b>Patterns in performance</b></div></div>
+        <div class="float-panel panel-bottom"><div class="mini-spark"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div><small>EXPLORE THE RECORD</small><b>History, in perspective.</b></div></div>
+        <div class="stage-caption">A GLOBAL STAGE <span>•</span> MILLIONS OF DATA POINTS</div>
+      </div>
+      <div class="hero-bottom"><span>SCROLL TO EXPLORE</span><span class="scroll-arrow">↓</span><span class="hero-bottom-right">OLYMPICS ATLAS <b>2026</b></span></div>
+    </section>
+
+    <section class="overview section-wrap" id="overview">
+      <div class="section-topline"><span>01 — THE PROJECT</span><span>FROM RAW RECORDS TO REAL INSIGHT</span></div>
+      <div class="overview-grid">
+        <h2>Sport is the spectacle.<br><span>Data is the lens.</span></h2>
+        <div class="overview-copy"><p>This Skill Bridge project explores Olympic records through a set of interactive visualizations. It turns a large dataset into a clearer view of how athletes compete, how medals are distributed, and how participation changes across sports and time.</p><p>Use the dashboard to investigate the charts yourself, then switch to the data story for an explanatory view of the findings.</p></div>
+      </div>
+      <div class="principles">
+        <article class="principle"><span class="principle-index">01 / COMPARE</span><div class="principle-icon">◎</div><h3>Countries & medals</h3><p>Compare medal-winning records and see how totals differ across countries.</p><span class="principle-arrow">↗</span></article>
+        <article class="principle"><span class="principle-index">02 / UNDERSTAND</span><div class="principle-icon">⌁</div><h3>Athletes & access</h3><p>Explore gender representation, age distribution, and sports participation.</p><span class="principle-arrow">↗</span></article>
+        <article class="principle"><span class="principle-index">03 / DISCOVER</span><div class="principle-icon">↗</div><h3>Change over time</h3><p>Trace athlete participation through the long history of the Olympic Games.</p><span class="principle-arrow">↗</span></article>
+      </div>
+    </section>
+
+    <section class="signal-section" id="insights">
+      <div class="section-wrap signal-wrap">
+        <div class="section-topline"><span>02 — FIRST LOOK</span><span>VISUAL CLUES FROM THE WORKBOOK</span></div>
+        <div class="signal-heading"><h2>Start with a question.<br><span>Follow the evidence.</span></h2><p>These are entry points into the analysis. Use the interactive dashboard below for the complete visualization and exact values.</p></div>
+        <div class="signal-grid">
+          <article class="signal-card signal-gender">
+            <div class="card-topline"><span>PARTICIPATION</span><span>01</span></div>
+            <div class="gender-compare"><div class="gender-col"><span class="bar-value">33,981</span><div class="gender-bar female-bar"></div><small>FEMALE</small></div><div class="gender-col"><span class="bar-value">101,590</span><div class="gender-bar male-bar"></div><small>MALE</small></div></div>
+            <h3>Who gets to compete?</h3><p>The displayed workbook shows a higher count for male athletes than female athletes. Explore how representation differs across the records.</p>
+            <a href="#dashboard" class="card-link">Investigate participation <span>↗</span></a>
+          </article>
+          <article class="signal-card">
+            <div class="card-topline"><span>AGE PROFILE</span><span>02</span></div>
+            <div class="age-chart" aria-hidden="true"><i style="height:24%"></i><i style="height:76%"></i><i style="height:62%"></i><i style="height:31%"></i><i style="height:13%"></i><i style="height:7%"></i><i style="height:4%"></i><i style="height:2%"></i></div>
+            <div class="axis-labels"><span>15</span><span>25</span><span>35</span><span>45+</span></div>
+            <h3>Age & performance</h3><p>Compare age groups and examine where athlete participation is concentrated.</p>
+            <a href="#dashboard" class="card-link">Explore age distribution <span>↗</span></a>
+          </article>
+          <article class="signal-card">
+            <div class="card-topline"><span>MEDAL RECORDS</span><span>03</span></div>
+            <div class="country-chart" aria-hidden="true"><div><span>USA</span><i style="width:94%"></i></div><div><span>URS</span><i style="width:65%"></i></div><div><span>GER</span><i style="width:51%"></i></div><div><span>GBR</span><i style="width:43%"></i></div><div><span>FRA</span><i style="width:36%"></i></div></div>
+            <h3>Who leads the table?</h3><p>Compare country medal records and inspect the distribution across medal categories.</p>
+            <a href="#dashboard" class="card-link">Compare countries <span>↗</span></a>
+          </article>
+        </div>
+        <p class="small-note">The three cards summarize visible values and patterns from the current workbook; decorative chart elements are illustrative. The Tableau dashboard is the interactive source of truth.</p>
+      </div>
+    </section>
+
+    <section class="dashboard-section section-wrap" id="dashboard">
+      <div class="section-topline"><span>03 — INTERACTIVE EXPLORER</span><span>POWERED BY TABLEAU PUBLIC</span></div>
+      <div class="dashboard-heading"><div><h2>Explore the<br><span>Olympic dataset.</span></h2><p>Switch between the dashboard and story without leaving this page.</p></div><div class="view-switch" role="tablist" aria-label="Select Tableau view"><button class="view-button is-active" data-view="dashboard" role="tab" aria-selected="true">Dashboard <span>↗</span></button><button class="view-button" data-view="story" role="tab" aria-selected="false">Story <span>↗</span></button></div></div>
+      <div class="tableau-card">
+        <div class="tableau-header"><div class="tableau-live"><span class="status-dot"></span><span id="viewLabel">LIVE DASHBOARD</span></div><a id="openTableau" href="https://public.tableau.com/app/profile/sudhanshu.dwivedi4562/viz/Book1_17931641802290/Dashboard1?publish=yes" target="_blank" rel="noopener noreferrer">Open full view ↗</a></div>
+        <div class="tableau-embed"><iframe id="tableauFrame" title="Olympics Analytics Dashboard" src="https://public.tableau.com/views/Book1_17931641802290/Dashboard1?:showVizHome=no&:embed=true&:toolbar=yes&:tabs=no" loading="lazy" allowfullscreen></iframe></div>
+        <div class="tableau-footer"><span>INTERACTIVE DATA · PUBLISHED WORKBOOK</span><span>Tip: hover, select marks, and use Tableau filters.</span></div>
+      </div>
+    </section>
+
+    <section class="story-section" id="story">
+      <div class="section-wrap story-grid">
+        <div class="story-main">
+          <div class="section-topline"><span>04 — THE DATA STORY</span><span>FROM CHARTS TO CONTEXT</span></div>
+          <h2>Numbers tell you<br>what. <em>Stories ask why.</em></h2>
+          <p>The Story view adds context to the visual analysis. Move through the published Tableau story to review the medal-by-country view and connect the charts with the wider questions explored in this project.</p>
+          <button class="button button-bright" id="openStoryButton">Open story in explorer <span>↗</span></button>
+          <div class="story-steps"><div><span>01</span><b>Observe</b><small>Notice a pattern</small></div><div><span>02</span><b>Compare</b><small>Check the differences</small></div><div><span>03</span><b>Question</b><small>Look for an explanation</small></div></div>
+        </div>
+        <div class="story-art" aria-hidden="true"><div class="story-glow"></div><div class="story-sheet"><div class="sheet-top"><span>OLYMPICS ATLAS</span><span>FIELD NOTES / 01</span></div><div class="sheet-title">The shape<br>of competition.</div><div class="sheet-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="sheet-bottom"><span>DATA → DISCOVERY</span><span>✳</span></div></div><div class="story-sticker">LOOK<br>CLOSER<span>✳</span></div><div class="story-art-caption">A DIFFERENT WAY TO SEE THE GAMES</div></div>
+      </div>
+    </section>
+
+    <section class="about-section section-wrap" id="about">
+      <div class="section-topline"><span>05 — PROJECT NOTES</span><span>MADE FOR LEARNING & DISCOVERY</span></div>
+      <div class="about-panel"><div class="about-copy"><div class="about-eyebrow">SKILL BRIDGE / PROJECT PRESENTATION</div><h2>Built to explore.<br><span>Designed to explain.</span></h2><p>This website is the front-end presentation for an academic Olympics data analytics project. It brings the published Tableau workbook into a focused, responsive experience for project demonstrations.</p><a class="button button-outline" href="https://public.tableau.com/app/profile/sudhanshu.dwivedi4562" target="_blank" rel="noopener noreferrer">View Tableau profile <span>↗</span></a></div><div class="about-facts"><div><small>PROJECT</small><b>Olympics Data Analytics</b></div><div><small>PROGRAM</small><b>Skill Bridge</b></div><div><small>VISUALIZATION</small><b>Tableau Public</b></div><div><small>FRONT END</small><b>HTML · CSS · JavaScript</b></div><div class="fact-tag"><span>●</span> INTERACTIVE & RESPONSIVE</div></div></div>
+    </section>
+  </main>
+
+  <footer class="footer"><a class="logo" href="#top"><span class="logo-symbol"><i></i><i></i><i></i><i></i><i></i></span><span class="logo-type">OLYMPICS<span>ATLAS</span></span></a><p>Data reveals patterns. Curiosity reveals meaning.</p><a class="back-top" href="#top">BACK TO TOP ↑</a><div class="footer-bottom"><span>SKILL BRIDGE PROJECT</span><span>OLYMPICS DATA ANALYTICS</span><span>© <span id="year"></span></span></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
